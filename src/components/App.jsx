@@ -18,7 +18,7 @@ return(
   <Container>
     <MenusBar />
     <Filter />
-    <Card.Group>
+    <Card.Group itemsPerRow={4}>
     {
       !isReady ? 'Загрузка...' 
       : books.map((book, i) => <BookCard {...book} key={i} />)
