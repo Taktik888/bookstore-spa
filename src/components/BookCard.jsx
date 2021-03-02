@@ -4,7 +4,7 @@ import { Card, Icon, Image, Button } from 'semantic-ui-react'
 const BookCard = (book) =>{
   const {title, author, price, image, addToCart, addedCount} = book;
 return (
-  <Card>
+  <Card className='onecard'>
     <Image src={image} />
     <Card.Content>
       <Card.Header>{title}</Card.Header>
